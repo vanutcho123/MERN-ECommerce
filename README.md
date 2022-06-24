@@ -26,3 +26,7 @@
     3.  Use state hook
     4.  Use Effect hook
     5.  Use Reducer hook
+8.  Manage State By Reducer Hook
+    1.  Define reducer
+    2.  Update fetch data
+    3.  Get State from useReducer
