@@ -1,13 +1,22 @@
-import "./App.css";
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 
+import ProductScreen from "./screens/ProductScreen";
+import HomeScreen from "./screens/HomeScreen";
 function App() {
   return (
-    <div>
-      <header>
-        <a href="/">H2SHOP</a>
-      </header>
-      <main>list product</main>
-    </div>
+    <BrowserRouter>
+      <div>
+        <header>
+          <Link to="/">H2SHOP</Link>
+        </header>
+        <main>
+          <Routes>
+            <Route path="/product/:slug" element={<ProductScreen />} />
+            <Route path="/" element={<HomeScreen />} />
+          </Routes>
+        </main>
+      </div>
+    </BrowserRouter>
   );
 }
 
