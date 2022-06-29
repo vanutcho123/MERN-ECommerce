@@ -39,4 +39,9 @@
     3.  use rating component in product component
 11. Create Product Details Screen
     1.  Fetch product from backend
-    2.  Create 3 columns for image, info and action
+    2.  Create 3 columns for image, info and action.
+12. Create Loading and Message Component
+    1.Create loading Component
+    2.Use Spinner Component
+    3.Create Message Component
+    4.Create utils.js to define getError function
