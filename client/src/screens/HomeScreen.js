@@ -1,9 +1,10 @@
-import React, { useState, useEffect, useReducer } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useReducer } from "react";
+// import { Link } from "react-router-dom";
 import axios from "axios";
 import logger from "use-reducer-logger";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { Helmet } from "react-helmet-async";
 
 // import data from "../data";
 import Product from "../components/Product/Product";
@@ -45,6 +46,9 @@ const HomeScreen = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>H2SHOP</title>
+      </Helmet>
       <h1>Featured Products</h1>
       <div className="products">
         {loading ? (
