@@ -57,7 +57,11 @@
     1. Create 2 columns
     2. Display items list
     3. Create action column
-16. Complete Cart Screen 
+16. Complete Cart Screen
     1. Click handler for inc/dec item
     2. Click handler for remove item
     3. Click handler for checkout
+17. Create Sign in Screen
+    1. Create sign in from
+    2. Add email and password
+    3. Add sign in button

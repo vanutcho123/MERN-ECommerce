@@ -11,6 +11,7 @@ import ProductScreen from "./screens/ProductScreen";
 import HomeScreen from "./screens/HomeScreen";
 import { Store } from "./Store/Store";
 import CartScreen from "./screens/CartScreen";
+import SignInScreen from "./screens/SignInScreen";
 function App() {
   const { state } = useContext(Store);
   const { cart } = state;
@@ -39,9 +40,10 @@ function App() {
         <main>
           <Container className="mt-3">
             <Routes>
+              <Route path="/" element={<HomeScreen />} />
               <Route path="/product/:slug" element={<ProductScreen />} />
               <Route path="/cart" element={<CartScreen />} />
-              <Route path="/" element={<HomeScreen />} />
+              <Route path="/signin" element={<SignInScreen />} />
             </Routes>
           </Container>
         </main>
