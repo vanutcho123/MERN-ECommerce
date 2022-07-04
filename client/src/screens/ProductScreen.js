@@ -1,5 +1,5 @@
 import { React, useEffect, useReducer, useContext } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -30,6 +30,7 @@ const reducer = (state, action) => {
 };
 
 const ProductScreen = () => {
+  const naviagate = useNavigate();
   const params = useParams();
   const { slug } = params;
 
@@ -66,6 +67,7 @@ const ProductScreen = () => {
       type: "CART_ADD_ITEM",
       payload: { ...product, quantity },
     });
+    naviagate("/cart");
   };
   return loading ? (
     <LoadingBox />
