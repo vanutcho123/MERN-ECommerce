@@ -30,7 +30,7 @@ const reducer = (state, action) => {
 };
 
 const ProductScreen = () => {
-  const naviagate = useNavigate();
+  const navigate = useNavigate();
   const params = useParams();
   const { slug } = params;
 
@@ -67,7 +67,7 @@ const ProductScreen = () => {
       type: "CART_ADD_ITEM",
       payload: { ...product, quantity },
     });
-    naviagate("/cart");
+    navigate("/cart");
   };
   return loading ? (
     <LoadingBox />
