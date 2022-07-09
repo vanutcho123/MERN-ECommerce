@@ -72,3 +72,9 @@
     4. connect to mongodb database
        username: nguyenvanhai13
        password: 061001
+19. Seed Sample Data
+    1. Create Product Model
+    2. Create user model
+    3. create seed route
+    4. use route in server.js
+    5. seed sample product
