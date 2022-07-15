@@ -131,4 +131,11 @@
     2. Show user information
     3. Create user update api
     4. Update user info
-    
+32. Publish To Heroku
+    1. Create and config project
+    2. server build folder in frontend folder
+    3. create heroku account
+    4. Connect it to github
+    5. Create mongodb atlas database
+    6. Set database connection in heroku env variables
+    7. Commit and push
